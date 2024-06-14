@@ -14,7 +14,7 @@ import ThemeToggler from '@/components/ThemeToggler';
 
 const Navbar = () => {
   return (
-    <div className='bg-primary dark:bg-slate-700 text-white py-2 px-5 flex justify-between'>
+    <div className='text-white py-2 px-5 flex justify-between border-b' dir='rtl'>
       <Link href='/'>
         <Image src={logo} alt='TraversyPress' width={40} />
       </Link>
@@ -29,13 +29,13 @@ const Navbar = () => {
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel>حسابي</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link href='/profile'>Profile</Link>
+              <Link href='/profile'>الملف الشخصي</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href='/auth'>Logout</Link>
+              <Link href='/auth'>تسجيل خروج</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

@@ -17,18 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='light'
-          enableSystem={true}
-          storageKey='dashboard-theme'
-        >
-          {children}
-          <Toaster />
-        </ThemeProvider>
-      </body>
-    </html>
+        <html lang='ar'>
+          <body className={inter.className}>
+            <ThemeProvider
+              attribute='class'
+              defaultTheme='light'
+              enableSystem={true}
+              storageKey='dashboard-theme'
+            >
+              {children}
+              <Toaster />
+            </ThemeProvider>
+          </body>
+        </html>
   );
 }
